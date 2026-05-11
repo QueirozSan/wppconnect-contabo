@@ -1,0 +1,24 @@
+# Dependencias
+node_modules/
+
+# Variaveis de ambiente - NUNCA commitar o .env real!
+.env
+
+# Tokens e sessoes do WPPConnect
+tokens/
+
+# Logs
+*.log
+logs/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Build
+dist/
+build/
