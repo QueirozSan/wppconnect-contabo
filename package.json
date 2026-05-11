@@ -1,0 +1,31 @@
+{
+    "name": "wppconnect-contabo",
+    "version": "1.0.0",
+    "description": "WPPConnect Server para WhatsApp rodando em VPS Contabo",
+    "main": "src/index.js",
+    "scripts": {
+          "start": "node src/index.js",
+          "dev": "nodemon src/index.js",
+          "pm2:start": "pm2 start src/index.js --name wppconnect",
+          "pm2:stop": "pm2 stop wppconnect",
+          "pm2:restart": "pm2 restart wppconnect",
+          "pm2:logs": "pm2 logs wppconnect"
+    },
+    "dependencies": {
+          "@wppconnect-team/wppconnect": "^1.30.0",
+          "cors": "^2.8.5",
+          "dotenv": "^16.3.1",
+          "express": "^4.18.2",
+          "multer": "^1.4.5-lts.1",
+          "qrcode": "^1.5.3"
+    },
+    "devDependencies": {
+          "nodemon": "^3.0.2"
+    },
+    "engines": {
+          "node": ">=18.0.0"
+    },
+    "keywords": ["whatsapp", "wppconnect", "bot", "api"],
+    "author": "QueirozSan",
+    "license": "MIT"
+}
